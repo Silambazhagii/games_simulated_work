@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .grid {
+    width: 622px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .square {
+    width: 200px;
+    height: 200px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    transition: transform 0.2s, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  .mole {
+    background-image: url("mole.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid 2px #ffe600;
+    animation: pop 0.5s ease;
+  }
+  
+  #score, #time-left {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffe600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #ff3d2e;
+    transform: translateY(-3px);
+  }
+  
