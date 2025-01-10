@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #E0F7FA, #B2EBF2);
+    font-family: Arial, sans-serif;
+}
+h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #00796B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #004D40;
+}
+
+.grid {
+    border: 2px solid #333;
+    background: linear-gradient(to bottom, #87CEFA, #4682B4);
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.ending-block {
+    background: radial-gradient(circle, #FF6347, #FF4500);
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.starting-block {
+    background: linear-gradient(to bottom, #4169E1, #1E90FF);
+    border: 2px solid #000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.l1, .l2, .l3 {
+    background: linear-gradient(to bottom, #8B4513, #A0522D);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.l4, .l5 {
+    background: linear-gradient(to bottom, #ADD8E6, #B0E0E6);
+    border-radius: 5px;
+    animation: float 3s infinite;
+}
+ 
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.c1 {
+    background: radial-gradient(circle, #000, #444);
+    border-radius: 5px;
+}
+
+.c2, .c3 {
+    background: linear-gradient(to bottom, #D3D3D3, #A9A9A9);
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.frog {
+    background: radial-gradient(circle, #32CD32, #228B22);
+    border: 2px solid #006400;
+    border-radius: 50%;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
