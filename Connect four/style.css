@@ -81,7 +81,7 @@ body {
   }
   
   .player-two {
-    background: radial-gradient(circle, #74c0fc, #007bff);
+    background: radial-gradient(circle, #dedbd4, #ffd700);
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
     animation: bounceIn 0.4s ease-in-out;
